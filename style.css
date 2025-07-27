@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://thumbs.dreamstime.com/b/weather-forecast-concept-sunny-rainy-blue-background-top-view-copy-space-weather-forecast-concept-sunny-rainy-blue-160677612.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  overflow: auto;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #00b4db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #0083b0;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  width: 120px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-card img {
+  width: 60px;
+}
+
+.one-day {
+  font-size: 18px;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-card {
+    width: 90%;
+  }
+}

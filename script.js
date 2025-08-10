@@ -1,4 +1,4 @@
-const apiKey = "ecdfe97cce4e5383e57a6b841b47f397";
+const apiKey = "Add Api Key";
 const resultBox = document.getElementById("weatherResult");
 const forecastToggle = document.getElementById("forecastToggle");
 
